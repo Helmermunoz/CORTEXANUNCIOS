@@ -21,11 +21,6 @@
         #inicio { text-align: center; background: #f4f4f4; padding: 100px 20px; }
 
         /* Productos */
-        /*.grid-productos { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
-        .producto { border: 1px solid #ddd; padding: 15px; border-radius: 8px; text-align: center; }
-        .producto img { max-width: 100%; border-radius: 5px; height: 200px; object-fit: cover; }
-        .producto h3 { margin: 10px 0; }*/
-    /* Estilos mejorados para las tarjetas de productos */
     .grid-productos { 
         display: grid; 
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
@@ -82,19 +77,25 @@
 </head>
 <body>
 
-    <header>
-        <nav>
-            <h1 style="color: #2250e6;">CORTEX</h1>
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#productos">Productos</a></li>
-                <li><a href="#nosotros">Nosotros</a></li>
-                <li><a href="#cotizador">Cotizador</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+<!-- Reemplaza todo el bloque <header> por este -->
+    <header style="background: #002d5a; border-bottom: 3px solid #e67e22; padding: 10px 0;">
+        <nav style="display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: auto; padding: 0 20px;">
+            
+            <!-- Contenedor del Logo -->
+            <a href="#inicio" style="text-decoration: none;">
+                <img src="CORTEXLOGO.jpg" alt="CORTEX Anuncios" style="height: 80px; width: auto; display: block;">
+            </a>
+    
+            <!-- Menú de Navegación -->
+            <ul style="display: flex; list-style: none; margin: 0; padding: 0;">
+                <li style="margin: 0 15px;"><a href="#inicio" style="color: white; text-decoration: none; font-weight: bold; font-size: 0.9rem; text-transform: uppercase;">Inicio</a></li>
+                <li style="margin: 0 15px;"><a href="#productos" style="color: white; text-decoration: none; font-weight: bold; font-size: 0.9rem; text-transform: uppercase;">Productos</a></li>
+                <li style="margin: 0 15px;"><a href="#nosotros" style="color: white; text-decoration: none; font-weight: bold; font-size: 0.9rem; text-transform: uppercase;">Nosotros</a></li>
+                <li style="margin: 0 15px;"><a href="#cotizador" style="color: white; text-decoration: none; font-weight: bold; font-size: 0.9rem; text-transform: uppercase;">Cotizador</a></li>
+                <li style="margin: 0 15px;"><a href="#contacto" style="color: white; text-decoration: none; font-weight: bold; font-size: 0.9rem; text-transform: uppercase;">Contacto</a></li>
             </ul>
         </nav>
     </header>
-
     <section id="inicio">
         <h1>Bienvenidos a CORTEX ANUNCIOS</h1>
         <p>Expertos en soluciones publicitarias de alto impacto.</p>

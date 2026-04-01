@@ -14,8 +14,12 @@
         nav ul li { margin: 0 15px; }
         nav ul li a { color: white; text-decoration: none; font-weight: bold; }
         
-        section { padding: 80px 20px; max-width: 1200px; margin: auto; }
-        h2 { text-align: center; margin-bottom: 40px; color: #4622e6; }
+        section {
+            width: 100%;        /* Ocupa todo el ancho en celulares */
+            max-width: 1200px;  /* Pero no se estira más de esto en PC */
+            margin: auto;
+            padding: 0 20px;    /* Margen interno para que el texto no toque los bordes del cel */
+        }        h2 { text-align: center; margin-bottom: 40px; color: #4622e6; }
 
         /* Inicio */
         #inicio { text-align: center; background: #f4f4f4; padding: 100px 20px; }
